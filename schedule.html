@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset ="utf-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="cal.js"></script>
+  </head>
+  <body>
+    <h1><a href="main.html">d0ngHee's Project</a></h1>
+
+    <nav>
+      <a href=https://d0ngr0thy.tistory.com/ target="_blank">Tstory</a>
+      <span>|</span>
+      <a href=https://library.ajou.ac.kr/#/ target="_blank">Ajou library</a>
+      <span>|</span>
+      <a href="">Ajou portal</a>
+      <span>|</span>
+      <a href="">Ajou Bb</a>
+    </nav>
+
+    <ul class="list">
+      <li><a class="active" href="bucket.html">버킷리스트</a></li>
+      <li><a href="schedule.html">달력으로 보는 일정</a></li>
+      <li><a href="project.html">프로젝트리스트</a></li>
+    </ul>
+    <div id="sc_cal">
+      <table id="cal" border=3 align="center">
+        <tr>
+          <td algin="center"><label onclick="prevCal()"><</label></td>
+          <td algin="center" id="YM" colspan=5></td>
+          <td algin="center"><label onclick="nextCal()">></label></td>
+        </tr>
+        <tr>
+          <td align="center"><font color=red>일</td>
+          <td align="center">월</td>
+          <td align="center">화</td>
+          <td align="center">수</td>
+          <td align="center">목</td>
+          <td align="center">금</td>
+          <td align="center"><font color=blue>토</td>
+        </tr>
+      </table>
+      <script language="javascript" type="text/javascript">buildCal();</script>
+    </div>
+
+    <div id = "sc_todo">
+      <script language="javascript" type="text/javascript">activeDate(today, today.getDate());</script>
+    </div>
+
+
+  </body>
+</html>

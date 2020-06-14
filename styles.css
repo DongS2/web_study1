@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+html{
+  background-color : #FFCCCC;
+}
+
+h1{
+  font-family: 'Henny Penny', cursive;
+  top-margin: 30px;
+  text-align: center;
+}
+
+.list{
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+  letter-spacing: 1px;
+  list-style-type: none;
+  text-align: center;
+  width: 1200px;
+  padding: 0;
+  margin-left:auto;
+  margin-right: auto;
+  background-color: rgba(34,34,34,0.3);
+}
+
+div#music{
+  opacity: 0.7;
+  height:10px;
+  float: right;
+}
+
+div#login{
+  float: right;
+}
+
+li {
+  text-align: justify;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 30px;
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline black;
+}
+
+nav{
+  text-align: center;
+}
+
+nav a{
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+img{
+  float: right;
+}
+
+table#cal{
+  text-align:center;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 30px;
+}
+
+div#sc_cal{
+  position: absolute;
+  left: 20%;
+
+}
+
+div#sc_cal>table#cal{
+  width:400px;
+  height:500px;
+}
+
+div#sc_todo{
+  position: absolute;
+  right: 20%;
+  
+  background-color: gray;
+
+
+  width: 400px;
+}

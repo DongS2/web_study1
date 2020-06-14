@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!--어떤 버전의 html을 작성했는가-->
+
+<html>
+  <head> <!--일반사용자는 head의 내용은 볼 수 없음-->
+    <meta charset = "UTF-8"> <!--meta는 문서에 관한 정보 = 한글-->
+    <title>( ◍•㉦•◍ )♡</title> <!--웹페이지 제목-->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="cal.js"></script>
+  </head>
+  <body>
+    <h1>d0ngHee's Project</h1>
+
+    <nav>
+      <a href=https://d0ngr0thy.tistory.com/ target="_blank">Tstory</a>
+      <span>|</span>
+      <a href=https://library.ajou.ac.kr/#/ target="_blank">Ajou library</a>
+      <span>|</span>
+      <a href="">Ajou portal</a>
+      <span>|</span>
+      <a href="">Ajou Bb</a>
+    </nav>
+
+    <ul class="list">
+      <li><a class="active" href="bucket.html">버킷리스트</a></li>
+      <li><a href="schedule.html">달력으로 보는 일정</a></li>
+      <li><a href="project.html">프로젝트리스트</a></li>
+    </ul>
+
+    <div id="login">
+      <label for:"id">ID : </label>
+      <input type="texT" name="id"><br> <!--name은 key로 전달됨-->
+      <label for:"pw">Passwd : </label>
+      <input type="password" name="pw">
+    </div>
+
+    <div id="main_cal">
+      <table id="cal" border=3 align="left">
+        <tr>
+          <td algin="center"><label onclick="prevCal()"><</label></td>
+          <td algin="center" id="YM" colspan=5>yyyy년 m월</td>
+          <td algin="center"><label onclick="nextCal()">></label></td>
+        </tr>
+        <tr>
+          <td align="center"><font color=red>일</td>
+          <td align="center">월</td>
+          <td align="center">화</td>
+          <td align="center">수</td>
+          <td align="center">목</td>
+          <td align="center">금</td>
+          <td align="center"><font color=blue>토</td>
+        </tr>
+      </table>
+      <script language="javascript" type="text/javascript">buildCal();</script>
+    </div>
+
+    <img src="pngbarn.png" alt="방명록" width="430px" height="320px">
+    <div id="music">
+      <audio controls>
+        <source src="03. 너에게 한 번 더 반하는 순간.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </body>
+</html>
